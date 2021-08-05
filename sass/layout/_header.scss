@@ -10,6 +10,9 @@
   padding: 0;
   line-height: 0;
 }
+.container {
+  padding-bottom: 0;
+}
 .burger-btn-icon {
   width: 40px;
   height: 40px;
@@ -36,7 +39,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: aqua;
+  background-color: var(--contrast-color);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -130,10 +133,13 @@
   .mobile-menu {
     display: none;
   }
-  .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .header {
+    height: 80px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav-list__nav-item {
+    margin-bottom: 10px;
   }
   .nav {
     display: flex;
@@ -156,7 +162,6 @@
 
     // padding-bottom: 32px;
     // padding-top: 32px;
-    margin-bottom: 10px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;

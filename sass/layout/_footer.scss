@@ -151,7 +151,6 @@
 @media screen and (min-width: 1200px) {
   .footer-section {
     display: flex;
-    align-items: baseline;
     justify-content: space-between;
   }
 
@@ -172,5 +171,11 @@
 
   .footer-input {
     width: 358px;
+  }
+  .footer-button {
+    margin-top: 0;
+  }
+  .footer-form {
+    margin-top: 0;
   }
 }

@@ -89,7 +89,6 @@
 }
 
 .footer-form {
-  display: block;
   margin-top: 60px;
 }
 .footer-input {
@@ -143,15 +142,12 @@
   .footer-input {
     width: 450px;
   }
-  .footer-form-label {
-    margin-right: 144px;
-    margin-left: 144px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-section {
     display: flex;
     justify-content: space-between;
+    text-align: left;
   }
 
   .footer-nav {

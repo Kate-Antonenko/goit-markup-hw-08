@@ -85,13 +85,14 @@
 }
 
 .modal-checkbox-label {
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-modal-color);
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  justify-content: center;
+  // justify-content: center;
 
   &::before {
     display: block;
@@ -130,5 +131,11 @@
   &:hover,
   &:focus {
     background: var(--button-focus-color);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-checkbox-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }

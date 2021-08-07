@@ -132,3 +132,32 @@
     flex-basis: calc((100% - 90px) / 3);
   }
 }
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 360px),
+//   screen and (min-resolution: 192dpi) and (min-width: 360px),
+//   screen and (min-resolution: 2dppx) and (min-width: 360px) {
+//   .hero {
+
+//       url(../images/hero/hero-phone@2x.jpg);
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .hero {
+
+//       url(../images/hero/hero-tablet@1x.jpg);
+//   }
+// }
+// @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//   screen and (min-resolution: 192dpi) and (min-width: 768px),
+//   screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//   .hero {
+
+//       url(../images/hero/hero-tablet@2x.jpg);
+//   }
+// }
+
+// @media screen and (min-width: 1200px) {
+//   .hero {
+
+//       url(../images/hero/hero-desktop@1x.jpg);
+//   }
+// }

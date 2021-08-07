@@ -15,45 +15,87 @@
 </head>
 <body>
     <!-- header -->
-    <header class="header">
-        <div class="container header-container">
-            <nav class="nav">
-                <a class="link logo logo-header" href="./"><span class="logo-blue">Web</span>Studio</a>
-                <ul class="list nav-list">
-                    <li class="nav-list__nav-item">
-                        <a class="link nav-list__nav-link" href="./index.html">Студия</a>
-                    </li>
-                    <li class="nav-list__nav-item">
-                        <a class="link nav-list__nav-link current" href="#">Портфолио</a>
-                    </li>
-                    <li class="nav-list__nav-item">
-                        <a class="link nav-list__nav-link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
+        <header class="header">
+            <div class="container header-container">
+                <nav class="nav">
+                    <a class="link logo logo-header" href="./"><span class="logo-blue">Web</span>Studio</a>
+                    <ul class="list nav-list">
+                        <li class="nav-list__nav-item">
+                            <a class="link nav-list__nav-link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav-list__nav-item">
+                            <a class="link nav-list__nav-link current" href="#">Портфолио</a>
+                        </li>
+                        <li class="nav-list__nav-item">
+                            <a class="link nav-list__nav-link" href="">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
                 <button class="burger-btn" data-menu-open>
                     <svg class="burger-btn-icon">
                         <use href="./images/sprite.svg#icon-burger"></use>
-                        </svg>
+                    </svg>
                 </button>
-            <ul class="list nav-contacts">
-                <li class="nav-list__nav-item">
-                    <a class="link nav-contacts__header-contacts" href="mailto:info@devstudio.com">
-                        <svg class="icon-contacts" width="16" height="12">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
+                <ul class="list nav-contacts">
+                    <li class="nav-list__nav-item">
+                        <a class="link nav-contacts__header-contacts" href="mailto:info@devstudio.com">
+                            <svg class="icon-contacts" width="16" height="12">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="nav-list__nav-item">
+                        <a class="link nav-contacts__header-contacts" href="tel:+380961111111">
+                            <svg class="icon-contacts" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu-container">
+                    <button class="mobile-menu-close-btn" data-menu-close>
+                        <svg class="mobile-menu-close-icon">
+                            <use href="./images/sprite.svg#icon-close-black"></use>
                         </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="nav-list__nav-item">
-                    <a class="link nav-contacts__header-contacts" href="tel:+380961111111">
-                        <svg class="icon-contacts" width="10" height="16">
-                            <use href="./images/sprite.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+                    </button>
+                    <ul class="list nav-list-mobile">
+                        <li class="nav-item-mobile">
+                            <a class="link nav-link-mobile" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav-item-mobile">
+                            <a class="link nav-link-mobile current" href="#">Портфолио</a>
+                        </li>
+                        <li class="nav-item-mobile">
+                            <a class="link nav-link-mobile" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="list nav-contacts-mobile">
+                        <li class="nav-list-contacts-mobile">
+                            <a class="link nav-contacts-mobile-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="nav-list-contacts-mobile">
+                            <a class="link nav-contacts-mobile-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="list social-list-mobile">
+                        <li class="social-list-item-mobile">
+                            <a href="" class="link social-list-link-mobile">Instagram</a>
+                        </li>
+                        <li class="social-list-item-mobile">
+                            <a href="" class="link social-list-link-mobile">Twitter</a>
+                        </li>
+                        <li class="social-list-item-mobile">
+                            <a href="" class="link social-list-link-mobile">Facebook</a>
+                        </li>
+                        <li class="social-list-item-mobile">
+                            <a href="" class="link social-list-link-mobile">LinkedIn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <!-- main -->
         <main>
             <section class="section portfolio-section"> 
@@ -82,18 +124,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)" 
-                                        srcset="./images/portfolio/desktop/img-1.webp 1x, ./images/portfolio/desktop/img-1@2x.webp 2x">
-                                    <source media="(min-width=1200px)" 
-                                        srcset="./images/portfolio/desktop/img-1.jpg 1x, ./images/portfolio/desktop/img-1@2x.jpg 2x">
-                                    <source media="(min-width=768px)" 
-                                        srcset="./images/portfolio/tablet/img-1.webp 1x, ./images/portfolio/tablet/img-1@2x.webp 2x">
-                                    <source media="(min-width=768px)" 
-                                        srcset="./images/portfolio/tablet/img-1.jpg 1x, ./images/portfolio/tablet/img-1@2x.jpg 2x">
-                                    <source media="(min-width=480px)" 
-                                        srcset="./images/portfolio/phone/img-1.webp 1x, ./images/portfolio/phone/img-1@2x.webp 2x">
-                                    <source media="(min-width=480px)" 
-                                        srcset="./images/portfolio/phone/img-1.jpg 1x, ./images/portfolio/phone/img-1@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/img.webp 1x, ./images/portfolio/desktop/img@2x.webp 2x">
+                                    <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/img.jpg 1x, ./images/portfolio/desktop/img@2x.jpg 2x">
+                                    <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/tablet/img.webp 1x, ./images/portfolio/tablet/img@2x.webp 2x">
+                                    <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/tablet/img.jpg 1x, ./images/portfolio/tablet/img@2x.jpg 2x">
+                                    <source media="(min-width: 480px)" 
+                                        srcset="./images/portfolio/phone/img.webp 1x, ./images/portfolio/phone/img@2x.webp 2x">
+                                    <source media="(min-width: 480px)" 
+                                        srcset="./images/portfolio/phone/img.jpg 1x, ./images/portfolio/phone/img@2x.jpg 2x">
                                     <img src="./images/img_1.jpg" alt="Комп">
                                     </picture>
                                 
@@ -111,18 +153,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-2.webp 1x, ./images/portfolio/desktop/img-2@2x.webp 2x">
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-2.jpg 1x, ./images/portfolio/desktop/img-2@2x.jpg 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-2.webp 1x, ./images/portfolio/tablet/img-2@2x.webp 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-2.jpg 1x, ./images/portfolio/tablet/img-2@2x.jpg 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-2.webp 1x, ./images/portfolio/phone/img-2@2x.webp 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-2.jpg 1x, ./images/portfolio/phone/img-2@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-1.webp 1x, ./images/portfolio/desktop/img-1@2x.webp 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-1.jpg 1x, ./images/portfolio/desktop/img-1@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-1.webp 1x, ./images/portfolio/tablet/img-1@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-1.jpg 1x, ./images/portfolio/tablet/img-1@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-1.webp 1x, ./images/portfolio/phone/img-1@2x.webp 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-1.jpg 1x, ./images/portfolio/phone/img-1@2x.jpg 2x">
                                     <img src="./images/img_2.jpg" alt="">
                                 </picture>
 
@@ -139,18 +181,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)" 
-                                        srcset="./images/portfolio/desktop/img-3.webp 1x, ./images/portfolio/desktop/img-3@2x.webp 2x">
-                                    <source media="(min-width=1200px)" 
-                                        srcset="./images/portfolio/desktop/img-3.jpg 1x, ./images/portfolio/desktop/img-3@2x.jpg 2x">
-                                    <source media="(min-width=768px)" 
-                                        srcset="./images/portfolio/tablet/img-3.webp 1x, ./images/portfolio/tablet/img-3@2x.webp 2x">
-                                    <source media="(min-width=768px)" 
-                                        srcset="./images/portfolio/tablet/img-3.jpg 1x, ./images/portfolio/tablet/img-3@2x.jpg 2x">
-                                    <source media="(min-width=480px)" 
-                                        srcset="./images/portfolio/phone/img-3.webp 1x, ./images/portfolio/phone/img-3@2x.webp 2x">
-                                    <source media="(min-width=480px)" 
-                                        srcset="./images/portfolio/phone/img-3.jpg 1x, ./images/portfolio/phone/img-3@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/img-2.webp 1x, ./images/portfolio/desktop/img-2@2x.webp 2x">
+                                    <source media="(min-width: 1200px)" 
+                                        srcset="./images/portfolio/desktop/img-2.jpg 1x, ./images/portfolio/desktop/img-2@2x.jpg 2x">
+                                    <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/tablet/img-2.webp 1x, ./images/portfolio/tablet/img-2@2x.webp 2x">
+                                    <source media="(min-width: 768px)" 
+                                        srcset="./images/portfolio/tablet/img-2.jpg 1x, ./images/portfolio/tablet/img-2@2x.jpg 2x">
+                                    <source media="(min-width: 480px)" 
+                                        srcset="./images/portfolio/phone/img-2.webp 1x, ./images/portfolio/phone/img-2@2x.webp 2x">
+                                    <source media="(min-width: 480px)" 
+                                        srcset="./images/portfolio/phone/img-2.jpg 1x, ./images/portfolio/phone/img-2@2x.jpg 2x">
                                     <img src="./images/img_3.jpg" alt="">
                                 </picture>
                                 
@@ -167,18 +209,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-4.webp 1x, ./images/portfolio/desktop/img-4@2x.webp 2x">
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-4.jpg 1x, ./images/portfolio/desktop/img-4@2x.jpg 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-4.webp 1x, ./images/portfolio/tablet/img-4@2x.webp 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-4.jpg 1x, ./images/portfolio/tablet/img-4@2x.jpg 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-4.webp 1x, ./images/portfolio/phone/img-4@2x.webp 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-4.jpg 1x, ./images/portfolio/phone/img-4@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-3.webp 1x, ./images/portfolio/desktop/img-3@2x.webp 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-3.jpg 1x, ./images/portfolio/desktop/img-3@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-3.webp 1x, ./images/portfolio/tablet/img-3@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-3.jpg 1x, ./images/portfolio/tablet/img-3@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-3.webp 1x, ./images/portfolio/phone/img-3@2x.webp 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-3.jpg 1x, ./images/portfolio/phone/img-3@2x.jpg 2x">
                                     <img src="./images/img_4.jpg" alt="">
                                 </picture>
                                 
@@ -195,18 +237,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-5.webp 1x, ./images/portfolio/desktop/img-5@2x.webp 2x">
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img51.jpg 1x, ./images/portfolio/desktop/img-5@2x.jpg 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-5.webp 1x, ./images/portfolio/tablet/img-5@2x.webp 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img51.jpg 1x, ./images/portfolio/tablet/img-5@2x.jpg 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-5.webp 1x, ./images/portfolio/phone/img-5@2x.webp 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img51.jpg 1x, ./images/portfolio/phone/img-5@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-4.webp 1x, ./images/portfolio/desktop/img-4@2x.webp 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-4.jpg 1x, ./images/portfolio/desktop/img-4@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-4.webp 1x, ./images/portfolio/tablet/img-4@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-4.jpg 1x, ./images/portfolio/tablet/img-4@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-4.webp 1x, ./images/portfolio/phone/img-4@2x.webp 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-4.jpg 1x, ./images/portfolio/phone/img-4@2x.jpg 2x">
                                     <img src="./images/img_5.jpg" alt=""">
                                 </picture>
                                 
@@ -223,18 +265,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-1.webp 6x, ./images/portfolio/desktop/img-6@2x.webp 2x">
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-1.jpg 6x, ./images/portfolio/desktop/img-6@2x.jpg 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-1.webp 6x, ./images/portfolio/tablet/img-6@2x.webp 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-1.jpg 6x, ./images/portfolio/tablet/img-6@2x.jpg 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-1.webp 6x, ./images/portfolio/phone/img-6@2x.webp 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-1.jpg 6x, ./images/portfolio/phone/img-6@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-6.webp 1x, ./images/portfolio/desktop/img-6@2x.webp 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-6.jpg 1x, ./images/portfolio/desktop/img-6@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-6.webp 1x, ./images/portfolio/tablet/img-6@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-6.jpg 1x, ./images/portfolio/tablet/img-6@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-6.webp 1x, ./images/portfolio/phone/img-6@2x.webp 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-6.jpg 1x, ./images/portfolio/phone/img-6@2x.jpg 2x">
                                     <img src="images/img_6.jpg" alt="">
                                 </picture>
                                 
@@ -251,18 +293,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-1.webp 7x, ./images/portfolio/desktop/img-7@2x.webp 2x">
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-1.jpg 7x, ./images/portfolio/desktop/img-7@2x.jpg 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-1.webp 7x, ./images/portfolio/tablet/img-7@2x.webp 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-1.jpg 7x, ./images/portfolio/tablet/img-7@2x.jpg 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-1.webp 7x, ./images/portfolio/phone/img-7@2x.webp 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-1.jpg 7x, ./images/portfolio/phone/img-7@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-6.webp 1x, ./images/portfolio/desktop/img-6@2x.webp 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-6.jpg 1x, ./images/portfolio/desktop/img-6@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-6.webp 1x, ./images/portfolio/tablet/img-6@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-6.jpg 1x, ./images/portfolio/tablet/img-6@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-6.webp 1x, ./images/portfolio/phone/img-6@2x.webp 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-6.jpg 1x, ./images/portfolio/phone/img-6@2x.jpg 2x">
                                     <img src="./images/img_7.jpg" alt="">   
                                 </picture>
                                 
@@ -279,18 +321,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-8.webp 1x, ./images/portfolio/desktop/img-8@2x.webp 2x">
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-8.jpg 1x, ./images/portfolio/desktop/img-8@2x.jpg 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-8.webp 1x, ./images/portfolio/tablet/img-8@2x.webp 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-8.jpg 1x, ./images/portfolio/tablet/img-8@2x.jpg 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-8.webp 1x, ./images/portfolio/phone/img-8@2x.webp 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-8.jpg 1x, ./images/portfolio/phone/img-8@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-7.webp 1x, ./images/portfolio/desktop/img-7@2x.webp 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-7.jpg 1x, ./images/portfolio/desktop/img-7@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-7.webp 1x, ./images/portfolio/tablet/img-7@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-7.jpg 1x, ./images/portfolio/tablet/img-7@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-7.webp 1x, ./images/portfolio/phone/img-7@2x.webp 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-7.jpg 1x, ./images/portfolio/phone/img-7@2x.jpg 2x">
                                     <img src="./images/img_8.jpg" alt="">
                                 </picture>
                             
@@ -307,18 +349,18 @@
                         <a class="link portfolio-list-link" href="#">
                             <div class="portfolio-wrapper">
                                 <picture>
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-9.webp 1x, ./images/portfolio/desktop/img-9@2x.webp 2x">
-                                    <source media="(min-width=1200px)"
-                                        srcset="./images/portfolio/desktop/img-9.jpg 1x, ./images/portfolio/desktop/img-9@2x.jpg 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-9.webp 1x, ./images/portfolio/tablet/img-9@2x.webp 2x">
-                                    <source media="(min-width=768px)"
-                                        srcset="./images/portfolio/tablet/img-9.jpg 1x, ./images/portfolio/tablet/img-9@2x.jpg 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-9.webp 1x, ./images/portfolio/phone/img-9@2x.webp 2x">
-                                    <source media="(min-width=480px)"
-                                        srcset="./images/portfolio/phone/img-9.jpg 1x, ./images/portfolio/phone/img-9@2x.jpg 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-8.webp 1x, ./images/portfolio/desktop/img-8@2x.webp 2x">
+                                    <source media="(min-width: 1200px)"
+                                        srcset="./images/portfolio/desktop/img-8.jpg 1x, ./images/portfolio/desktop/img-8@2x.jpg 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-8.webp 1x, ./images/portfolio/tablet/img-8@2x.webp 2x">
+                                    <source media="(min-width: 768px)"
+                                        srcset="./images/portfolio/tablet/img-8.jpg 1x, ./images/portfolio/tablet/img-8@2x.jpg 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-8.webp 1x, ./images/portfolio/phone/img-8@2x.webp 2x">
+                                    <source media="(min-width: 480px)"
+                                        srcset="./images/portfolio/phone/img-8.jpg 1x, ./images/portfolio/phone/img-8@2x.jpg 2x">
                                     <img src="./images/img_9.jpg" alt="">
                                 </picture>
                             
@@ -337,52 +379,55 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container footer-section">
-            <div class=footer-section-nav>
-                <address class="footer-nav">
-                    <a class="link logo logo-footer" href="#"><span class="logo-blue">Web</span>Studio</a>
-                    <ul class="list footer-list">
-                        <li class="footer-item"><a class="footer-address link" href="https://goo.gl/maps/kJepah17gNQW5WTg7"
-                                target="_blank" rel="noopener noreferrer">г. Киев,
-                                пр-т Леси Украинки, 26</a></li>
-                        <li class="footer-item"><a class="footer-contacts link"
-                                href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="footer-item"><a class="footer-contacts link" href="tel:+380991111111">+38 099 111 11
-                                11</a></li>
+            <div class="footer-tablet-section">
+                <div class=footer-section-nav>
+                    <address class="footer-nav">
+                        <a class="link logo logo-footer" href="#"><span class="logo-blue">Web</span>Studio</a>
+                        <ul class="list footer-list">
+                            <li class="footer-item"><a class="footer-address link"
+                                    href="https://goo.gl/maps/kJepah17gNQW5WTg7" target="_blank"
+                                    rel="noopener noreferrer">г. Киев,
+                                    пр-т Леси Украинки, 26</a></li>
+                            <li class="footer-item"><a class="footer-contacts link"
+                                    href="mailto:info@example.com">info@example.com</a></li>
+                            <li class="footer-item"><a class="footer-contacts link" href="tel:+380991111111">+38 099 111 11
+                                    11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-content">
+                    <p class="footer-text">присоединяйтесь</p>
+                    <ul class="social-list-footer">
+                        <li class="list social-list-item">
+                            <a href="" class="social-list-link-footer">
+                                <svg class="social-list-icon">
+                                    <use href="./images/sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list social-list-item">
+                            <a href="" class="social-list-link-footer">
+                                <svg class="social-list-icon">
+                                    <use href="./images/sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list social-list-item">
+                            <a href="" class="social-list-link-footer">
+                                <svg class="social-list-icon">
+                                    <use href="./images/sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list social-list-item">
+                            <a href="" class="social-list-link-footer">
+                                <svg class="social-list-icon">
+                                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer-content">
-                <p class="footer-text">присоединяйтесь</p>
-                <ul class="social-list-footer">
-                    <li class="list social-list-item">
-                        <a href="" class="social-list-link-footer">
-                            <svg class="social-list-icon">
-                                <use href="./images/sprite.svg#icon-instagram"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list social-list-item">
-                        <a href="" class="social-list-link-footer">
-                            <svg class="social-list-icon">
-                                <use href="./images/sprite.svg#icon-twitter"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list social-list-item">
-                        <a href="" class="social-list-link-footer">
-                            <svg class="social-list-icon">
-                                <use href="./images/sprite.svg#icon-facebook"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li class="list social-list-item">
-                        <a href="" class="social-list-link-footer">
-                            <svg class="social-list-icon">
-                                <use href="./images/sprite.svg#icon-linkedin"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
             <div class="footer-form">
                 <p class="footer-text">Подпишитесь на рассылку</p>
@@ -399,5 +444,6 @@
             </div>
         </div>
     </footer>
+        <script src="./js/menu.js"></script>
 </body>
 </html>

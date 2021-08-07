@@ -30,7 +30,9 @@
     color: var(--contrast-color);
   }
 }
-
+.portfolio-list:not(:last-child) {
+  margin-bottom: 30px;
+}
 // .menu-list {
 //   display: flex;
 //   flex-wrap: wrap;
@@ -44,8 +46,9 @@
 // }
 
 .portfolio-list-link {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+
   transition: background var(--animation), box-shadow var(--animation);
 
   &:hover,

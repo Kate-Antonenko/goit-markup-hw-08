@@ -204,6 +204,25 @@
   .logo-header {
     margin-right: 50px;
   }
+  .current {
+    padding-bottom: 32px;
+    padding-top: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      bottom: 0;
+      border-radius: 2px;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -271,24 +290,4 @@
 .icon-contacts {
   margin: 0 10px 0 0;
   fill: currentColor;
-}
-
-.current {
-  padding-bottom: 32px;
-  padding-top: 32px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    bottom: 0;
-    border-radius: 2px;
-  }
 }
